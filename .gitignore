@@ -1,0 +1,3 @@
+backend/geckodriver.log
+backend/.env
+backend/__pycache__/
