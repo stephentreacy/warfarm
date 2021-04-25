@@ -1,4 +1,4 @@
-"""Warframe Buy or Farm
+"""Warfarm
 
 Takes a Tenno Zone link from a file
 Gets the items selected via checkboxes on website
@@ -118,31 +118,5 @@ def get_market_prices(item, type='mod'):
         print(f'Item: {item} not found')
     else:
         item_json = json.loads(json_url_item.read())
-        return item_json['payload']
-
-
-
-if __name__ == '__main__':
-
-    item_orders = {}
-
-    items = get_item_list('https://tenno.zone/planner/Sk1Snn14E')
-    print('Items Retrieved', items)
-
-    for item in items:
-        orders = get_market_prices(item, 'item')
-        if orders:
-            df_orders = pd.json_normalize(orders['orders'])
-            df_sell = df_orders[(df_orders['user.status'] == 'ingame') & (df_orders['order_type'] == 'sell')]
-            df_buy = df_orders[(df_orders['user.status'] == 'ingame') & (df_orders['order_type'] == 'buy')]
-            sell_orders = df_sell.nsmallest(5, 'platinum')['platinum'].values
-            buy_orders = df_buy.nlargest(5, 'platinum')['platinum'].values
-            item_orders.update({item : [sell_orders, buy_orders, item.lower().replace(' ','_').replace('-','_').replace("'",'').replace('&','and')]})
-        time.sleep(0.4)
-    print(item_orders)
-
+        return item_json['payload']      
             
-            
-
-
-

@@ -1,3 +1,4 @@
 backend/geckodriver.log
 backend/.env
 backend/__pycache__/
+discord_bot/.env
