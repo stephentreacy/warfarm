@@ -50,7 +50,7 @@ class ItemPrices(Resource):
                 
             item_orders[item] = {'buy_orders':buy_orders,'sell_orders':sell_orders}
 
-        return jsonify(item_orders)
+        return jsonify({'data':item_orders})
     
 api.add_resource(ItemPrices, '/items')
 
