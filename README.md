@@ -19,4 +19,4 @@ User can use $items command to request orders.
 
 Creates embeded messages containing a [warframe.market](https://warframe.market/) link for the item and the most relevant buy and sale orders.
 
-![Example Image](https://raw.githubusercontent.com/stephentreacy/warfarm/main/images/discord_bot_example.PNG)
+![Example Image](https://raw.githubusercontent.com/stephentreacy/warfarm/main/images/discord_bot_example.png)
