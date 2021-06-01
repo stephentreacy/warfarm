@@ -1,7 +1,4 @@
-backend/geckodriver.log
-backend/.env
-backend/__pycache__/
 discord_bot/.env
-discord_bot/testing.ipynb
-.gitignore
-discord_bot/test.py
+api/.env
+ignore.py
+.vscode

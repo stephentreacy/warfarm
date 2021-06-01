@@ -54,8 +54,6 @@ async def on_message(message):
         try:
             link = message.content.split()[1]
 
-            if not link.startswith('https://tenno.zone/planner/') or link == 'https://tenno.zone/planner/':
-                raise ValueError
 
             user_links.update_one(dict(user=message.author.id), {'$set':{'link':link}},upsert=True)
 
