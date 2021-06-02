@@ -5,9 +5,11 @@ Merges [warfarm_bot](https://github.com/stephentreacy/warfarm_bot) and [warframe
 
 # Warfarm API
 
-Receives [tenno.zone](https://tenno.zone/planner/) ID and retrieves selected items from [tenno.zone](https://tenno.zone/planner/) and makes requests to the [warframe.market](https://warframe.market/) API to get current buy and sell orders for each item. Item orders are saved to MongoDB and orders from database are used if last request was recent.
+Hosted using AWS Lambda.
 
-To be hosted using AWS Lambda.
+Receives [tenno.zone](https://tenno.zone/planner/) ID and retrieves selected items from [tenno.zone](https://tenno.zone/planner/) and makes requests to the [warframe.market](https://warframe.market/) API to get current buy and sell orders for each item. Item orders were saved to MongoDB and orders from database were used if last request was recent. Will update to DynamoDB.
+
+Example request can be seen [here](https://nl8x5g3ujh.execute-api.eu-west-1.amazonaws.com/dev/items?link=rk2ac_B5d)
 
 # WarfarmBot
 

@@ -2,3 +2,5 @@ discord_bot/.env
 api/.env
 ignore.py
 .vscode
+api/zappa_settings.json
+api/__pycache__/
