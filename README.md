@@ -1,9 +1,17 @@
+This repo is being split into serpeate repos for each part. This page still acts as a summary of the entire project but may be out of date.
+
+- Warfarm API -> [warfarm_api](https://github.com/stephentreacy/warfarm_api)
+- WarfarmBot -> Here (will be changed).
+- Warfarm SPA -> Not currently in development.
+
 # Warfarm
 Single Page Application and Discord Bot to retrieve prices from warframe.market. Used to get a quick overview of prices and decide if the item should be bought or farmed in game.
 
 Merges [warfarm_bot](https://github.com/stephentreacy/warfarm_bot) and [warframe_buy_or_farm](https://github.com/stephentreacy/warframe_buy_or_farm)
 
 # Warfarm API
+
+NOTE: No longer hosted with AWS Lambda or otherwise or uses a DB.
 
 Hosted using AWS Lambda.
 
